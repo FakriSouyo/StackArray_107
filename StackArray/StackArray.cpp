@@ -13,3 +13,9 @@
 		StackArray() {
 			top = -1;
 		}
+
+	int push(int element) {
+			if (top == 4) { //step 1
+				cout << "Number of data execeeds the limit. " << endl;
+				return "";
+			}
