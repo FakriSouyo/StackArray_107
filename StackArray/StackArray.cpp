@@ -17,7 +17,7 @@
 	int push(int element) {
 			if (top == 4) { //step 1
 				cout << "Number of data execeeds the limit. " << endl;
-				return "";
+				return ;
 			}
 
 			top++; //step 2
@@ -42,3 +42,15 @@
 	bool empty() {
 		return (top == -1);
 	}
+
+	void display() {
+		if (empty()) {
+			cout << "\nStack is empty. " << endl;
+		}
+		else {
+			for (int tmp = 0; tmp <= top; tmp++) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
+	}
+};
