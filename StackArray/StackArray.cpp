@@ -49,7 +49,7 @@ public:
 			cout << "\nStack is empty. " << endl;
 		}
 		else {
-			for (int tmp = 0; tmp <= top; tmp++) {
+			for (int tmp = top; tmp >= 0; tmp--) {
 				cout << stack_array[tmp] << endl;
 			}
 		}
@@ -68,7 +68,6 @@ public:
 			cout << "4. Exit\n";
 			cout << "\nEnter your choice: ";
 			cin >> ch;
-			int input;
 			switch (ch) {
 			case '1': {
 				cout << "\nEnter a element: ";
