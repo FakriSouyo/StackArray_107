@@ -17,7 +17,7 @@
 	int push(int element) {
 			if (top == 4) { //step 1
 				cout << "Number of data execeeds the limit. " << endl;
-				return;
+				return  element;
 			}
 
 			top++; //step 2
