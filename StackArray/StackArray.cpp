@@ -1,24 +1,25 @@
-	#include <iostream>
-	#include <string>
+#include <iostream>
+#include <string>
 
-	using namespace std;
+using namespace std;
 
-	class StackArray {
-	private:
-		int stack_array[5];
-		int top;
+class StackArray {
+private:
+	int stack_array[5];
+	int top;
 
-	public:
-		//constructor
-		StackArray() {
-			top = -1;
-		}
+public:
+	// constructor
+	StackArray() {
+		top = -1;
+	}
 
 	int push(int element) {
-			if (top == 4) { //step 1
-				cout << "Number of data execeeds the limit. " << endl;
-				return  element;
-			}
+		if (top == 4) { // step 1
+			cout << "Number of data exceeds the limit. " << endl;
+			return element;
+		}
+
 
 			top++; //step 2
 			stack_array[top] = element; //step 3
